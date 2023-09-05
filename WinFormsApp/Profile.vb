@@ -6,10 +6,9 @@
 
         name = txtName.Text
         surname = txtSurname.Text
-        gender = txtGender.Text
+        gender = listGender.SelectedItem.ToString()
 
         MsgBox($"Hello {name} {surname} it is good to know you are a {gender}.")
-
 
     End Sub
 End Class

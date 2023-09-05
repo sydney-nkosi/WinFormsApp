@@ -26,9 +26,9 @@ Partial Class Profile
         lblSurname = New Label()
         lblGender = New Label()
         txtName = New TextBox()
-        txtGender = New TextBox()
         txtSurname = New TextBox()
         btnDisplay = New Button()
+        listGender = New ListBox()
         SuspendLayout()
         ' 
         ' lblName
@@ -65,13 +65,6 @@ Partial Class Profile
         txtName.Size = New Size(178, 23)
         txtName.TabIndex = 3
         ' 
-        ' txtGender
-        ' 
-        txtGender.Location = New Point(179, 173)
-        txtGender.Name = "txtGender"
-        txtGender.Size = New Size(178, 23)
-        txtGender.TabIndex = 5
-        ' 
         ' txtSurname
         ' 
         txtSurname.Location = New Point(179, 128)
@@ -81,21 +74,31 @@ Partial Class Profile
         ' 
         ' btnDisplay
         ' 
-        btnDisplay.Location = New Point(180, 226)
+        btnDisplay.Location = New Point(179, 300)
         btnDisplay.Name = "btnDisplay"
         btnDisplay.Size = New Size(177, 23)
         btnDisplay.TabIndex = 6
         btnDisplay.Text = "Display"
         btnDisplay.UseVisualStyleBackColor = True
         ' 
+        ' listGender
+        ' 
+        listGender.FormattingEnabled = True
+        listGender.ItemHeight = 15
+        listGender.Items.AddRange(New Object() {"Male", "Female", "Other"})
+        listGender.Location = New Point(179, 181)
+        listGender.Name = "listGender"
+        listGender.Size = New Size(178, 94)
+        listGender.TabIndex = 7
+        ' 
         ' Profile
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(560, 369)
+        Controls.Add(listGender)
         Controls.Add(btnDisplay)
         Controls.Add(txtSurname)
-        Controls.Add(txtGender)
         Controls.Add(txtName)
         Controls.Add(lblGender)
         Controls.Add(lblSurname)
@@ -113,4 +116,5 @@ Partial Class Profile
     Friend WithEvents txtGender As TextBox
     Friend WithEvents txtSurname As TextBox
     Friend WithEvents btnDisplay As Button
+    Friend WithEvents listGender As ListBox
 End Class

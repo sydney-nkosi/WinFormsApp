@@ -35,12 +35,12 @@ Partial Class Calculator
         Subtract = New Button()
         Addition = New Button()
         Division = New Button()
-        PlusMinus = New Button()
+        btnClear = New Button()
         Button0 = New Button()
         Comma = New Button()
         Equals = New Button()
-        InputTextBox = New TextBox()
-        OutputLabel = New Label()
+        txtBox = New TextBox()
+        lblOutput = New Label()
         SuspendLayout()
         ' 
         ' Button1
@@ -173,15 +173,15 @@ Partial Class Calculator
         Division.Text = "/"
         Division.UseVisualStyleBackColor = True
         ' 
-        ' PlusMinus
+        ' btnClear
         ' 
-        PlusMinus.Location = New Point(299, 192)
-        PlusMinus.Margin = New Padding(2)
-        PlusMinus.Name = "PlusMinus"
-        PlusMinus.Size = New Size(78, 25)
-        PlusMinus.TabIndex = 14
-        PlusMinus.Text = "+/-"
-        PlusMinus.UseVisualStyleBackColor = True
+        btnClear.Location = New Point(299, 192)
+        btnClear.Margin = New Padding(2)
+        btnClear.Name = "btnClear"
+        btnClear.Size = New Size(78, 25)
+        btnClear.TabIndex = 14
+        btnClear.Text = "C"
+        btnClear.UseVisualStyleBackColor = True
         ' 
         ' Button0
         ' 
@@ -212,31 +212,32 @@ Partial Class Calculator
         Equals.Text = "="
         Equals.UseVisualStyleBackColor = True
         ' 
-        ' InputTextBox
+        ' txtBox
         ' 
-        InputTextBox.Location = New Point(85, 45)
-        InputTextBox.Name = "InputTextBox"
-        InputTextBox.Size = New Size(397, 23)
-        InputTextBox.TabIndex = 17
+        txtBox.Location = New Point(85, 45)
+        txtBox.Name = "txtBox"
+        txtBox.Size = New Size(397, 23)
+        txtBox.TabIndex = 17
+        txtBox.TextAlign = HorizontalAlignment.Right
         ' 
-        ' OutputLabel
+        ' lblOutput
         ' 
-        OutputLabel.AutoSize = True
-        OutputLabel.Location = New Point(434, 19)
-        OutputLabel.Name = "OutputLabel"
-        OutputLabel.Size = New Size(0, 15)
-        OutputLabel.TabIndex = 18
+        lblOutput.AutoSize = True
+        lblOutput.Location = New Point(434, 19)
+        lblOutput.Name = "lblOutput"
+        lblOutput.Size = New Size(0, 15)
+        lblOutput.TabIndex = 18
         ' 
         ' Calculator
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(560, 270)
-        Controls.Add(OutputLabel)
-        Controls.Add(InputTextBox)
+        Controls.Add(lblOutput)
+        Controls.Add(txtBox)
         Controls.Add(Equals)
         Controls.Add(Division)
-        Controls.Add(PlusMinus)
+        Controls.Add(btnClear)
         Controls.Add(Button0)
         Controls.Add(Comma)
         Controls.Add(Multiply)
@@ -271,10 +272,10 @@ Partial Class Calculator
     Friend WithEvents Subtract As Button
     Friend WithEvents Addition As Button
     Friend WithEvents Division As Button
-    Friend WithEvents PlusMinus As Button
+    Friend WithEvents btnClear As Button
     Friend WithEvents Button0 As Button
     Friend WithEvents Comma As Button
     Friend WithEvents Equals As Button
-    Friend WithEvents InputTextBox As TextBox
-    Friend WithEvents OutputLabel As Label
+    Friend WithEvents txtBox As TextBox
+    Friend WithEvents lblOutput As Label
 End Class
