@@ -29,12 +29,16 @@ Partial Class Profile
         txtSurname = New TextBox()
         btnDisplay = New Button()
         listGender = New ListBox()
+        txtTribe = New TextBox()
+        txtYearOfBirth = New TextBox()
+        Label1 = New Label()
+        Label2 = New Label()
         SuspendLayout()
         ' 
         ' lblName
         ' 
         lblName.AutoSize = True
-        lblName.Location = New Point(97, 88)
+        lblName.Location = New Point(97, 22)
         lblName.Name = "lblName"
         lblName.Size = New Size(39, 15)
         lblName.TabIndex = 0
@@ -43,7 +47,7 @@ Partial Class Profile
         ' lblSurname
         ' 
         lblSurname.AutoSize = True
-        lblSurname.Location = New Point(83, 136)
+        lblSurname.Location = New Point(83, 67)
         lblSurname.Name = "lblSurname"
         lblSurname.Size = New Size(54, 15)
         lblSurname.TabIndex = 1
@@ -60,14 +64,14 @@ Partial Class Profile
         ' 
         ' txtName
         ' 
-        txtName.Location = New Point(179, 89)
+        txtName.Location = New Point(179, 23)
         txtName.Name = "txtName"
         txtName.Size = New Size(178, 23)
         txtName.TabIndex = 3
         ' 
         ' txtSurname
         ' 
-        txtSurname.Location = New Point(179, 128)
+        txtSurname.Location = New Point(179, 62)
         txtSurname.Name = "txtSurname"
         txtSurname.Size = New Size(178, 23)
         txtSurname.TabIndex = 4
@@ -78,7 +82,7 @@ Partial Class Profile
         btnDisplay.Name = "btnDisplay"
         btnDisplay.Size = New Size(177, 23)
         btnDisplay.TabIndex = 6
-        btnDisplay.Text = "Display"
+        btnDisplay.Text = "Your Small Bio"
         btnDisplay.UseVisualStyleBackColor = True
         ' 
         ' listGender
@@ -91,11 +95,47 @@ Partial Class Profile
         listGender.Size = New Size(178, 94)
         listGender.TabIndex = 7
         ' 
+        ' txtTribe
+        ' 
+        txtTribe.Location = New Point(179, 140)
+        txtTribe.Name = "txtTribe"
+        txtTribe.Size = New Size(178, 23)
+        txtTribe.TabIndex = 11
+        ' 
+        ' txtYearOfBirth
+        ' 
+        txtYearOfBirth.Location = New Point(179, 101)
+        txtYearOfBirth.Name = "txtYearOfBirth"
+        txtYearOfBirth.Size = New Size(178, 23)
+        txtYearOfBirth.TabIndex = 10
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(83, 144)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(32, 15)
+        Label1.TabIndex = 9
+        Label1.Text = "Tribe"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(65, 106)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(71, 15)
+        Label2.TabIndex = 8
+        Label2.Text = "Year of Birth"
+        ' 
         ' Profile
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(560, 369)
+        Controls.Add(txtTribe)
+        Controls.Add(txtYearOfBirth)
+        Controls.Add(Label1)
+        Controls.Add(Label2)
         Controls.Add(listGender)
         Controls.Add(btnDisplay)
         Controls.Add(txtSurname)
@@ -117,4 +157,8 @@ Partial Class Profile
     Friend WithEvents txtSurname As TextBox
     Friend WithEvents btnDisplay As Button
     Friend WithEvents listGender As ListBox
+    Friend WithEvents txtTribe As TextBox
+    Friend WithEvents txtYearOfBirth As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
