@@ -33,7 +33,8 @@ Namespace My
         Protected Overrides Sub OnCreateMainForm()
             'Me.MainForm = Calculator
             'Me.MainForm = Profile
-            Me.MainForm = DataTypeCheck
+            'Me.MainForm = DataTypeCheck
+            Me.MainForm = Messages
         End Sub
     End Class
 End Namespace
