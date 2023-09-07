@@ -6,6 +6,6 @@
     End Sub
 
     Private Sub btnShowMessage_Click(sender As Object, e As EventArgs) Handles btnShowMessage.Click
-        MessageBox.Show($"1. {txtPart1.Text}{vbCrLf}. {txtPart2.Text}{vbCrLf}. {txtPart3.Text}", txtTitle.Text, MessageBoxButtons.OKCancel)
+        MessageBox.Show($"1. {txtPart1.Text}{vbCrLf}2. {txtPart2.Text}{vbCrLf}3. {txtPart3.Text}", txtTitle.Text, MessageBoxButtons.OKCancel)
     End Sub
 End Class
